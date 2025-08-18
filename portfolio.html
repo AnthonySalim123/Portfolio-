@@ -1107,11 +1107,14 @@
             padding: 1rem;
             border-radius: 15px;
             transition: all 0.3s ease;
+            pointer-events: auto;
         }
 
         .contact-item:hover {
             background: var(--white-ultra-transparent);
             transform: translateX(10px);
+            color: var(--text-dark);
+            text-decoration: underline;
         }
 
         .contact-icon {
@@ -1128,6 +1131,7 @@
 
         .contact-details {
             flex: 1;
+            pointer-events: auto;
         }
 
         .contact-label {
@@ -1139,6 +1143,12 @@
         .contact-value {
             color: var(--text-medium);
             font-size: 1rem;
+            position: relative;
+            z-index: 10;
+            display: inline-block;
+            color: var(--text-medium);
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         .contact-form {
@@ -1821,18 +1831,6 @@
                   </div>
                 </div>
               
-                <!-- Portfolio -->
-                <div class="contact-item">
-                  <div class="contact-icon">🌐</div>
-                  <div class="contact-details">
-                    <span class="contact-label">Portfolio</span>
-                    <span class="contact-value">
-                      <a href="https://your-username.github.io/portfolio/" target="_blank" rel="noopener">
-                        your-username.github.io/portfolio/
-                      </a>
-                    </span>
-                  </div>
-                </div>
               
                 <!-- LinkedIn -->
                 <div class="contact-item">
@@ -1876,13 +1874,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="#" class="social-link">📧</a>
-                <a href="#" class="social-link">🔗</a>
-                <a href="#" class="social-link">🐙</a>
-                <a href="#" class="social-link">🐦</a>
-            </div>
+        
             <p class="footer-text">&copy; 2024 Anthony Winata Salim. Crafted with passion and code.</p>
         </div>
     </footer>
